@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS layers Page</title>
+        <style>
+            .container{
+                position:relative;
+            }
+            .box{
+                width:150px;
+                height:150px;
+                opacity:0.9;
+                position: absolute;
+            }
+            .red{
+                background: #ff0000;
+                z-index: 1;
+
+            }
+            .green{
+                top:30px;
+                left:30px;
+                background: #bb6830;
+                z-index:2;
+
+            }
+            .blue{
+                top:60px;
+                left:60px;
+                background: #958877;
+                z-index:3
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box red"></div>
+            <div class="box green"></div>
+            <div class="box blue"></div>
+        </div>
+    </body>
+</html>
